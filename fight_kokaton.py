@@ -169,6 +169,7 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 return
+                
             if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
                 # キーが押されたら、かつ、スペースキーだったら
                 beam = Beam(bird)
